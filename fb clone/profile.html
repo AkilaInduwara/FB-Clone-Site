@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile page - Socialbook</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="https://kit.fontawesome.com/05d48a93d7.js" crossorigin="anonymous"></script><!--location icon from FONTAWESOME.COM-->
+    
+</head>
+<body>
+ <!--navigation bar-->
+ <nav>
+        <div class="nav-left"><!--left side of the nav bar-->
+            <a href="index.html"><img src="./Images/images/logo.png" alt="logo" class="logo"></a><!--logo-->
+            <ul>
+                <li><i class="fa-solid fa-bell"></i></li>
+                <li><i class="fa-solid fa-envelope"></i></li>
+                <li><i class="fa-brands fa-youtube"></i></li>
+            </ul>
+        </div>
+        <div class="nav-right"><!--right side of the nav bar-->
+            <div class="search-box">
+                <img src="./Images/images/search.png" alt="" id="searchlogo">
+                <input type="text" placeholder="search">
+            </div>
+            <div class="nav-usericon online" onclick="settingMenuToggle()"><!--there are two classes for dp and online status-->
+                <img src="./Images/images/profile-pic.png" alt="" id="pp">
+            </div>
+        </div>
+
+       <!--dropped down settings menu-->      
+        <div class="settings-menu">
+            <!-- --------- darkmode buttton---------- --->
+            <div id="dark-btn">
+                <span></span>
+            </div>
+
+
+
+
+            <!----------------drop down menu------------------>
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="./Images/images/profile-pic.png" alt="">
+                    <div>
+                        <p>John Nicholson</p>
+                        <a href="profile.html">See Your Profile</a>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="user-profile">
+                    <img src="./Images/images/feedback.png" alt="">
+                    <div>
+                        <p>Give FeedBack</p>
+                        <a href="#">Help Us for Improvements!!!</a>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="settings-links">
+                    <img src="./Images/images/setting.png" alt="" class="settings-icon">
+                    <a href="#">Settings & Privacy <img src="./Images/images/arrow.png" alt="" width="10px"></a>
+                </div>
+
+                <div class="settings-links">
+                    <img src="./Images/images/help.png" alt="" class="settings-icon">
+                    <a href="#">Help & Supports <img src="./Images/images/arrow.png" alt="" width="10px"></a>
+                </div>
+
+                <div class="settings-links">
+                    <img src="./Images/images/display.png" alt="" class="settings-icon">
+                    <a href="#">Display & Accessibility <img src="./Images/images/arrow.png" alt="" width="10px"></a>
+                </div>
+
+                <div class="settings-links">
+                    <img src="./Images/images/logout.png" alt="" class="settings-icon">
+                    <a href="#">Log Out <img src="./Images/images/arrow.png" alt="" width="10px"></a>
+                </div>
+
+            </div>
+            
+
+        </div>
+
+    </nav>
+
+     
+    
+<!--------------profile page----------- -->
+
+    <div class="profile-container">
+        <img src="./Images/images/cover.png" alt="" class="cover-img">
+
+        <div class="profile-details">
+            <!----------------left side of profile details -->
+            <div class="pd-left">
+                <div class="pd-row">
+                    <img src="./Images/images/profile-pic.png" alt="" class="pd-img">
+                    <div>
+                        <h3>John Nicholson</h3>
+                        <p>120 Friend - 20 Mutual</p>
+                        <img src="./Images/images/member-1.png" alt="">
+                        <img src="./Images/images/member-2.png" alt="">
+                        <img src="./Images/images/member-3.png" alt="">
+                        <img src="./Images/images/member-4.png" alt="">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!----------------right side of profile details -->
+            <div class="pd-right">
+
+                <button type="button"><img src="./Images/images/add-friends.png" alt="">Friends</button>
+                <button type="button"><img src="./Images/images/message.png" alt="">Message</button>
+                <br>
+                <a href="#"><img src="./Images/images/more.png" alt=""></a>
+            </div>
+        </div>
+
+
+
+        <div class="profile-info">
+
+        <!----------------profile infomations such as photos,fried list(left side) -->            
+            <div class="info-col">
+
+                <div class="profile-intro">
+                    <h3>Intro</h3>
+                    <p class="intro-txt"><img src="./Images/images/devil-emoji.png" alt=""> I am a devil of my word!!! <img src="./Images/images/devil-emoji.png" alt=""></p>
+                    <hr>
+                    <ul>
+                        <li><img src="./Images/images/profile-job.png" alt=""> Owner of the CaineXI EditZz</li>
+                        <li><img src="./Images/images/profile-study.png" alt=""> Studied at Maliyadewa college</li>
+                        <li><img src="./Images/images/profile-home.png" alt=""> Lives in Polgahawela</li>
+                        <li><img src="./Images/images/profile-location.png" alt=""> From Sri Lanka</li>
+                    </ul>
+                </div>
+
+
+                <div class="profile-intro">
+                    <div class="title-box">
+                        <h3>Photos</h3>
+                        <a href="#">All Photos</a>
+                    </div> 
+
+                    <div class="photo-box">
+                        <div><img src="./Images/images/photo1.png" alt=""></div>                        
+                        <div><img src="./Images/images/photo2.png" alt=""></div>
+                        <div><img src="./Images/images/photo3.png" alt=""></div>
+                        <div><img src="./Images/images/photo4.png" alt=""></div>
+                        <div><img src="./Images/images/photo5.png" alt=""></div>
+                        <div><img src="./Images/images/photo6.png" alt=""></div>
+                    </div>
+                </div>
+
+
+                <div class="profile-intro">
+                    <div class="title-box">
+                        <h3>Friends</h3>
+                        <a href="#">All Friends</a>
+                    </div> 
+                    <p>120 (10 mutual)</p>
+                    <div class="friend-box">
+                        <div><img src="./Images/images/member-9.png" alt=""><p>Alison Mina</p></div>                        
+                        <div><img src="./Images/images/member-8.png" alt=""><p>John Smith</p></div>
+                        <div><img src="./Images/images/member-3.png" alt=""><p>Sally Warne</p></div>
+                        <div><img src="./Images/images/member-6.png" alt=""><p>Eddie Broke</p></div>
+                        <div><img src="./Images/images/member-4.png" alt=""><p>Samson Jacob</p></div>
+                        <div><img src="./Images/images/member-2.png" alt=""><p>Emma Smith</p></div>
+                        <div><img src="./Images/images/member-6.png" alt=""><p>Allen Wayne</p></div>
+                        <div><img src="./Images/images/member-8.png" alt=""><p>Sarah Campbell</p></div>
+                        <div><img src="./Images/images/member-9.png" alt=""><p>Tom Jackson</p></div>
+                    </div>
+                </div>
+                
+
+
+            </div>
+
+            <!----------------posts that post by the owner of the post(right side)-->
+            <div class="post-col">
+                <div class="write-post-container">
+                    <div class="user-profile">
+                        <im./Images/images/profile-pic.png" alt="">
+                        <div>
+                            <p>John Nicholson</p>
+                            <small>Public <i class="fa-solid fa-caret-down"></i></small>
+                        </div>
+                    </div>
+    
+                    <div class="post-input-container">
+                        <textarea rows="3" placeholder="What's on your mind, John?"></textarea>
+                        <div class="add-post-links">
+                            <a href="#"><img src="./Images/images/live-video.png" alt=""> Go Live</a>
+                            <a href="#"><img src="./Images/images/photo.png" alt=""> Photo/Video</a>
+                            <a href="#"><img src="./Images/images/feeling.png" alt=""> Feeling/Activity</a>
+                        </div>    
+                    </div>    
+                </div>
+
+
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="./Images/Untitled design (14).png" alt="">
+                            <div>
+                                <p>John Nicholson </p>
+                                <span>March 31 2023 at 12.30PM </span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                    
+                    <P class="post-text"><span>Lorem ipsum dolor sit amet,</span> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br> <a href="#">@Lorem ipsum</a> 
+                        <a href="#">@CaineXIEDITZz</a>   <a href="#">#YouTube</a></P>
+                        <img src="./Images/Blue And Red Futuristic Game YouTube Channel Art (1).png" alt="" class="post-img">
+    
+                    <div class="post-row">
+                        <div class="activity-icon">
+                            <div><img src="./Images/images/like-blue.png" alt="">120</div>
+                            <div><img src="./Images/images/comments.png" alt="">10</div>
+                            <div><img src="./Images/images/share.png" alt="">20</div>
+    
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="./Images/images/profile-pic.png" alt=""><i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>    
+                       
+                </div>
+    
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="./Images/images/member-3.png" alt="">
+                            <div>
+                                <p>Sally Warne</p>
+                                <span>April 2 2023 at 7.30AM </span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                    
+                    <P class="post-text"><span>Lorem ipsum dolor sit amet,</span> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>  
+                        <a href="#">#friendsforever</a></P>
+                        <img src="./Images/images/feed-image-3.jpg" alt="" class="post-img">
+    
+                    <div class="post-row">
+                        <div class="activity-icon">
+                            <div><img src="./Images/images/like.png" alt="">50</div>
+                            <div><img src="./Images/images/comments.png" alt="">8</div>
+                            <div><img src="./Images/images/share.png" alt="">4</div>
+    
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="./Images/images/profile-pic.png" alt=""><i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>    
+                       
+                </div>
+    
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="./Images/images/member-1.png" alt="">
+                            <div>
+                                <p>Alison Mina</p>
+                                <span>Yesterday at 8.00AM </span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                    
+                    <P class="post-text"><span>Lorem ipsum dolor sit amet,</span> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>  
+                        <a href="#">#Chillwithfriends</a></P>
+                        <img src="./Images/images/feed-image-2.jpg" alt="" class="post-img">
+    
+                    <div class="post-row">
+                        <div class="activity-icon">
+                            <div><img src="./Images/images/like.png" alt="">135</div>
+                            <div><img src="./Images/images/comments.png" alt="">26</div>
+                            <div><img src="./Images/images/share.png" alt="">18</div>
+    
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="./Images/images/profile-pic.png" alt=""><i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>    
+                       
+                </div>
+    
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="./Images/images/member-8.png" alt="">
+                            <div>
+                                <p>Sarah Campbell</p>
+                                <span>Just Now</span>
+                            </div>
+    
+                        </div>
+                        <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                    
+                    <P class="post-text"><span>Lorem ipsum dolor sit amet,</span> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>  
+                        <a href="#">#workfromhome</a></P>
+                        <img src="./Images/images/feed-image-4.png" alt="" class="post-img">
+    
+                    <div class="post-row">
+                        <div class="activity-icon">
+                            <div><img src="./Images/images/like-blue.png" alt="">235</div>
+                            <div><img src="./Images/images/comments.png" alt="">86</div>
+                            <div><img src="./Images/images/share.png" alt="">6</div>
+    
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="./Images/images/profile-pic.png" alt=""><i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>    
+                       
+                </div>
+                <button type="button" class="load-more-button">Load More</button>
+
+
+            </div>
+
+            
+
+        </div>
+ 
+
+    </div>
+    
+
+
+
+
+
+
+    <div class="footer">
+        <p>Copyright 2023 - AkilaInduwara</p>
+    </div>
+    
+    
+<script src="script.js"></script>    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

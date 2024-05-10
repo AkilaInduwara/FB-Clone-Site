@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socialbook</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="https://kit.fontawesome.com/05d48a93d7.js" crossorigin="anonymous"></script><!--location icon from FONTAWESOME.COM-->
+    
+</head>
+<body>
+ <!--navigation bar-->
+    <nav>
+        <div class="nav-left"><!--left side of the nav bar-->
+            <a href="index.html"><img src="./Images/images/logo.png" alt="logo" class="logo"></a><!--logo-->
+            <ul>
+                <li><i class="fa-solid fa-bell"></i></li>
+                <li><i class="fa-solid fa-envelope"></i></li>
+                <li><i class="fa-brands fa-youtube"></i></li>
+            </ul>
+        </div>
+        <div class="nav-right"><!--right side of the nav bar-->
+            <div class="search-box">
+                <img src="./Images/images/search.png" alt="" id="searchlogo">
+                <input type="text" placeholder="search">
+            </div>
+            <div class="nav-usericon online" onclick="settingMenuToggle()"><!--there are two classes for dp and online status-->
+                <img src="./Images/images/profile-pic.png" alt="" id="pp">
+            </div>
+        </div>
+
+       <!--dropped down settings menu-->      
+        <div class="settings-menu">
+            <!-- --------- darkmode buttton---------- --->
+            <div id="dark-btn">
+                <span></span>
+            </div>
+
+
+
+
+            <!----------------drop down menu------------------>
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="./Images/images/profile-pic.png" alt="">
+                    <div>
+                        <p>John Nicholson</p>
+                        <a href="profile.html">See Your Profile</a>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="user-profile">
+                    <img src="./Images/images/feedback.png" alt="">
+                    <div>
+                        <p>Give FeedBack</p>
+                        <a href="#">Help Us for Improvements!!!</a>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="settings-links">
+                    <img src="./Images/images/setting.png" alt="" class="settings-icon">
+                    <a href="#">Settings & Privacy <img src="./Images/images/arrow.png" alt="" width="10px"></a>
+                </div>
+
+                <div class="settings-links">
+                    <img src="./Images/images/help.png" alt="" class="settings-icon">
+                    <a href="#">Help & Supports <img src="./Images/images/arrow.png" alt="" width="10px"></a>
+                </div>
+
+                <div class="settings-links">
+                    <img src="./Images/images/display.png" alt="" class="settings-icon">
+                    <a href="#">Display & Accessibility <img src="./Images/images/arrow.png" alt="" width="10px"></a>
+                </div>
+
+                <div class="settings-links">
+                    <img src="./Images/images/logout.png" alt="" class="settings-icon">
+                    <a href="#">Log Out <img src="./Images/images/arrow.png" alt="" width="10px"></a>
+                </div>
+
+            </div>
+            
+
+        </div>
+
+    </nav>
+    
+
+<!--Container-->    
+    <div class="container">
+    <!--Left side bar-->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="./Images/images/news.png" alt="">Latest News</a> 
+                <a href="#"><img src="./Images/images/friends.png" alt="">Friends</a> 
+                <a href="#"><img src="./Images/images/group.png" alt="">Groups</a> 
+                <a href="#"><img src="./Images/images/marketplace.png" alt="">Marketplace</a>
+                <a href="#"><img src="./Images/images/watch.png" alt="">Watch</a> 
+                <a href="#">See More </a> 
+            </div>
+            <div class="shortcut-links">
+                <p>Your Shortcuts</p>
+                <a href="#"><img src="./Images/images/shortcut-1.png" alt="">Web Developers</a>
+                <a href="#"><img src="./Images/images/shortcut-2.png" alt="">Web Design Courses</a>
+                <a href="#"><img src="./Images/images/shortcut-3.png" alt="">Full stack Development</a>
+                <a href="#"><img src="./Images/images/shortcut-4.png" alt="">Website Experts </a>
+            </div>
+        </div>
+  
+    <!--Main Content-->
+        <div class="main-content">
+
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="./Images/images/upload.png" alt="">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story2">
+                    <img src="./Images/images/member-1.png" alt="">
+                    <p>Alison Mina</p>
+                </div>
+                <div class="story story3">
+                    <img src="./Images/images/member-2.png" alt="">
+                    <p>John Smith</p>
+                </div>
+                <div class="story story4">
+                    <img src="./Images/images/member-3.png" alt="">
+                    <p>Sally Warne</p>
+                </div>
+                <div class="story story5">
+                    <img src="./Images/images/member-4.png" alt="">
+                    <p>Jenson Reign</p>
+                </div>                 
+            </div>
+
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="./Images/images/profile-pic.png" alt="">
+                    <div>
+                        <p>John Nicholson</p>
+                        <small>Public <i class="fa-solid fa-caret-down"></i></small>
+                    </div>
+                </div>
+
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="What's on your mind, John?"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><img src="./Images/images/live-video.png" alt=""> Go Live</a>
+                        <a href="#"><img src="./Images/images/photo.png" alt=""> Photo/Video</a>
+                        <a href="#"><img src="./Images/images/feeling.png" alt=""> Feeling/Activity</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="./Images/Untitled design (14).png" alt="">
+                        <div>
+                            <p>John Nicholson </p>
+                            <span>March 31 2023 at 12.30PM </span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                
+                <P class="post-text"><span>Lorem ipsum dolor sit amet,</span> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br> <a href="#">@Lorem ipsum</a> 
+                    <a href="#">@CaineXIEDITZz</a>   <a href="#">#YouTube</a></P>
+                    <img src="./Images/Blue And Red Futuristic Game YouTube Channel Art (1).png" alt="" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="./Images/images/like-blue.png" alt="">120</div>
+                        <div><img src="./Images/images/comments.png" alt="">10</div>
+                        <div><img src="./Images/images/share.png" alt="">20</div>
+
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="./Images/images/profile-pic.png" alt=""><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>    
+                   
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="./Images/images/member-3.png" alt="">
+                        <div>
+                            <p>Sally Warne</p>
+                            <span>April 2 2023 at 7.30AM </span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                
+                <P class="post-text"><span>Lorem ipsum dolor sit amet,</span> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>  
+                    <a href="#">#friendsforever</a></P>
+                    <img src="./Images/images/feed-image-3.jpg" alt="" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="./Images/images/like.png" alt="">50</div>
+                        <div><img src="./Images/images/comments.png" alt="">8</div>
+                        <div><img src="./Images/images/share.png" alt="">4</div>
+
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="./Images/images/profile-pic.png" alt=""><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>    
+                   
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="./Images/images/member-1.png" alt="">
+                        <div>
+                            <p>Alison Mina</p>
+                            <span>Yesterday at 8.00AM </span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                
+                <P class="post-text"><span>Lorem ipsum dolor sit amet,</span> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>  
+                    <a href="#">#Chillwithfriends</a></P>
+                    <img src="./Images/images/feed-image-2.jpg" alt="" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="./Images/images/like.png" alt="">135</div>
+                        <div><img src="./Images/images/comments.png" alt="">26</div>
+                        <div><img src="./Images/images/share.png" alt="">18</div>
+
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="./Images/images/profile-pic.png" alt=""><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>    
+                   
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="./Images/images/member-8.png" alt="">
+                        <div>
+                            <p>Sarah Campbell</p>
+                            <span>Just Now</span>
+                        </div>
+
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                
+                <P class="post-text"><span>Lorem ipsum dolor sit amet,</span> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>  
+                    <a href="#">#workfromhome</a></P>
+                    <img src="./Images/images/feed-image-4.png" alt="" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="./Images/images/like-blue.png" alt="">235</div>
+                        <div><img src="./Images/images/comments.png" alt="">86</div>
+                        <div><img src="./Images/images/share.png" alt="">6</div>
+
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="./Images/images/profile-pic.png" alt=""><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>    
+                   
+            </div>
+
+            <button type="button" class="load-more-button">Load More</button>
+
+
+
+
+        </div> 
+
+    <!--Right side bar-->
+        <div class="right-sidebar">
+
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>March</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> Polgahawela Public Ground</p> 
+                    <a href="#">More Info</a>
+                </div>    
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>22</h3>
+                    <span>April</span>
+                </div>
+                <div class="right-event">
+                    <h4>Youth New year</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> Kurunegala Town Hall</p> 
+                    <a href="#">More Info</a>
+                </div>  
+            </div>
+
+
+            <div class="sidebar-title">
+                <h4>Advertisement</h4>
+                <a href="#">Close</a>
+            </div>
+            <img src="./Images/images/advertisement.png" alt="" class="sidebar-ads">
+
+
+            <div class="sidebar-title">
+                <h4>Chat</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="./Images/images/member-1.png" alt="" >
+                </div>
+                <p>Alison Mina</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="./Images/images/member-2.png" alt="" >
+                </div>
+                <p>John Smith</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="./Images/images/member-3.png" alt="" >
+                </div>
+                <p>Sally Warne</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Copyright 2023 - AkilaInduwara</p>
+    </div>
+    
+    
+<script src="script.js"></script>    
+</body>
+</html>
